@@ -1,6 +1,6 @@
 # Supernova
 
-Advanced terminal string styling.
+Terminal string styling.
 
 <div align="center">
   <img alt="Photo of the Veil Nebula from the Hubble Space Telescope." src="https://github.com/gbaptista/supernova/blob/master/images/header.png">
