@@ -13,7 +13,7 @@ RUN chmod +x /usr/bin/fennel
 
 FROM nickblah/lua:5.3-luarocks-alpine
 
-RUN apk add bash gcc --update --no-cache
+RUN apk add bash libc-dev --update --no-cache
 
 COPY --from=builder /usr/bin/fennel /usr/bin/fennel
 
