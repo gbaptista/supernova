@@ -1246,42 +1246,44 @@ for raw_theme in themes:gmatch('([^@]*)@?') do
     break
   end
 
-  local theme = build_theme(raw_theme)
+  if raw_theme ~= '' then
+    local theme = build_theme(raw_theme)
 
-  local colors = 0
-  for _ in pairs(theme.colors) do
-    colors = colors + 1
-  end
-
-  supernova:register(theme)
-  supernova:set_theme(theme.identifier)
-
-  print('')
-  print(
-    supernova[theme.identifier].rainbow(
-      '  # ' .. tostring(theme.original_name) ..
-      ' by ' .. tostring(theme.original_author)
-    )
-  )
-
-  local line = '  '
-  local clean_line = '  '
-  local first = true
-
-  for _, color in pairs(theme.colors) do
-    local name = supernova.name(color)
-    if first then
-      line = line .. supernova.color(ensure_size(name .. ' ', 20), name)
-      clean_line = clean_line .. ensure_size('|' .. '|', 20, '|')
-      first = false
-    else
-      line = line .. ' | ' .. supernova.color(ensure_size(name .. ' ', 20), name)
-      clean_line = clean_line .. '|||' .. ensure_size('|' .. '|', 20, '|')
+    local colors = 0
+    for _ in pairs(theme.colors) do
+      colors = colors + 1
     end
-  end
 
-  print(line)
-  print(supernova[theme.identifier].rainbow(clean_line))
+    supernova:register(theme)
+    supernova:set_theme(theme.identifier)
+
+    print('')
+    print(
+      supernova[theme.identifier].rainbow(
+        '  # ' .. tostring(theme.original_name) ..
+        ' by ' .. tostring(theme.original_author)
+      )
+    )
+
+    local line = '  '
+    local clean_line = '  '
+    local first = true
+
+    for _, color in pairs(theme.colors) do
+      local name = supernova.name(color)
+      if first then
+        line = line .. supernova.color(ensure_size(name .. ' ', 20), name)
+        clean_line = clean_line .. ensure_size('|' .. '|', 20, '|')
+        first = false
+      else
+        line = line .. ' | ' .. supernova.color(ensure_size(name .. ' ', 20), name)
+        clean_line = clean_line .. '|||' .. ensure_size('|' .. '|', 20, '|')
+      end
+    end
+
+    print(line)
+    print(supernova[theme.identifier].rainbow(clean_line))
+  end
 end
 
 print('')
