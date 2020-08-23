@@ -1,6 +1,8 @@
 # Supernova
 
-Terminal string styling.
+![Fennel 0.0.5 on Lua 5.1](https://github.com/gbaptista/supernova/workflows/Fennel%200.0.5%20on%20Lua%205.1/badge.svg) ![Fennel 0.0.5 on Lua 5.2](https://github.com/gbaptista/supernova/workflows/Fennel%200.0.5%20on%20Lua%205.2/badge.svg) ![Fennel 0.0.5 on Lua 5.3](https://github.com/gbaptista/supernova/workflows/Fennel%200.0.5%20on%20Lua%205.3/badge.svg) ![Fennel 0.0.5 on Lua 5.4](https://github.com/gbaptista/supernova/workflows/Fennel%200.0.5%20on%20Lua%205.4/badge.svg)
+
+Terminal string styling. Put some color in your console! Support for Fennel, Lua, and Shell.
 
 <div align="center">
   <img alt="Photo of the Veil Nebula from the Hubble Space Telescope." src="https://github.com/gbaptista/supernova/blob/master/images/header.png">
