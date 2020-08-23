@@ -1,5 +1,6 @@
 local supernova = require 'supernova.core.controller'
 local View = require 'supernova.cli.view'
+local TableHelper = require 'supernova.helpers.table'
 
 local HELPERS = require 'supernova.core.helpers'
 
@@ -70,7 +71,7 @@ function Handler.run_helpers(chain, _, command, arguments)
   end
 
   if View[command] then
-    View[command](arguments, chain(table.unpack(arguments.params)))
+    View[command](arguments, chain(TableHelper.unpack(arguments.params)))
   else
     error('Missing View /' .. command .. '/')
   end
@@ -88,9 +89,9 @@ function Handler.run_chain(chain, use_instance, arguments)
   local result
 
   if use_instance then
-    result = chain(supernova, content, table.unpack(arguments.params))
+    result = chain(supernova, content, TableHelper.unpack(arguments.params))
   else
-    result = chain(content, table.unpack(arguments.params))
+    result = chain(content, TableHelper.unpack(arguments.params))
   end
 
   io.write(result)

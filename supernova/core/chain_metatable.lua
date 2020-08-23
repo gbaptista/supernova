@@ -1,5 +1,6 @@
 local Style = require 'supernova.core.style'
 local HELPERS = require 'supernova.core.helpers'
+local TableHelper = require 'supernova.helpers.table'
 
 local ChainMetatable = {
   __index = function(controller, key)
@@ -153,9 +154,9 @@ local ChainMetatable = {
         end
 
         if received_instance then
-          content = handler(controller, content, table.unpack(params))
+          content = handler(controller, content, TableHelper.unpack(params))
         else
-          content = handler(content, table.unpack(params))
+          content = handler(content, TableHelper.unpack(params))
         end
       end
     end

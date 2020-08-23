@@ -1,6 +1,7 @@
 local ColorReductor = {}
 
 local ColorHelper = require 'supernova.helpers.color'
+local TableHelper = require 'supernova.helpers.table'
 local ANSI = require 'supernova.core.ansi'
 
 ColorReductor['COLOR_PALETTES'] = {
@@ -9,7 +10,7 @@ ColorReductor['COLOR_PALETTES'] = {
   [8]   = {}
 }
 
-ColorReductor['COLOR_PALETTES'][8] = table.pack(table.unpack(
+ColorReductor['COLOR_PALETTES'][8] = TableHelper.pack(TableHelper.unpack(
   ColorReductor['COLOR_PALETTES'][16], 1, 8
 ))
 
