@@ -28,5 +28,10 @@ jobs:
         uses: ./.github/workflows/actions/lua-5.3
         with:
           bash-script-path: '.github/workflows/tests.sh'
+      - name: Run examples
+        id: examples-lua-5-3
+        uses: ./.github/workflows/actions/lua-5.3
+        with:
+          bash-script-path: '.github/workflows/examples.sh'
 
 
