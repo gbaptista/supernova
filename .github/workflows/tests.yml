@@ -20,7 +20,10 @@ jobs:
   lua_5_4:
     name: Lua 5.4
     runs-on: ubuntu-latest
-    uses: ./
-    id: Lua 5.4
-    with:
-      bash-script-path: 'test-and-lint.sh'
+    steps:
+      - name: Run tests
+        id: tests-lua-5.4
+        uses: ./
+          id: Lua 5.4
+          with:
+            bash-script-path: 'test-and-lint.sh'
