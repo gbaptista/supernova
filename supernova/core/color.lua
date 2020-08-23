@@ -94,7 +94,20 @@ function Color.apply_gradient(content, sgr_code, colors_hex, colors)
 
   local first_line = true
 
+  local lines = {}
+
   for line in content:gmatch('([^\n]*)\n?') do
+    table.insert(lines, line)
+  end
+
+  -- Lua < 5.3 compatibility
+  if _VERSION and _VERSION:find('5%.[1|2]') then
+    if lines[#lines] == '' then
+      table.remove(lines, #lines)
+    end
+  end
+
+  for _, line in pairs(lines) do
     if not first_line then
       result = result .. '\n'
     else
@@ -115,6 +128,10 @@ function Color.apply_gradient(content, sgr_code, colors_hex, colors)
         content_part_max, colors
       )
     end
+  end
+
+  if content:sub(#content, #content) == '\n' then
+    result = result .. '\n'
   end
 
   return result

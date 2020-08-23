@@ -1,5 +1,6 @@
 local Style = {}
 local ColorHelper = require 'supernova.helpers.color'
+local TableHelper = require 'supernova.helpers.table'
 
 function Style.register_theme(controller, theme_to_register)
   local registered_styles = {}
@@ -39,7 +40,7 @@ function Style.register_theme(controller, theme_to_register)
         end
       end
 
-      register(table.unpack(style.params))
+      register(TableHelper.unpack(style.params))
     end
   end
 
@@ -89,7 +90,7 @@ function Style.register(controller, style)
 
     if style.params then
       if extra_1 == nil then
-        extra_1, extra_2, extra_3 = table.unpack(style.params)
+        extra_1, extra_2, extra_3 = TableHelper.unpack(style.params)
       end
     end
 
