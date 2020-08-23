@@ -156,7 +156,7 @@ function Handler.run()
     if first_command == nil then
       first_command = partial_command
     end
-      
+
     if partial_command ~= "" then
       chain = chain[partial_command]
       last_command = partial_command
