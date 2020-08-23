@@ -1,3 +1,5 @@
+set -e
+
 luarocks install luacheck
 
 luacheck **/**/**/*.lua

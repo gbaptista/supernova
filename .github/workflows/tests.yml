@@ -17,9 +17,21 @@ on:
       - 'Makefile'
 
 jobs:
+  lua_5_3_linter:
+    name: Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run tests
+        id: tests-lua-5-3
+        uses: ./.github/workflows/actions/lua-5.3
+        with:
+          bash-script-path: '.github/workflows/tests.sh'
   lua_5_3_tests:
     name: Fennel 0.0.5 on Lua 5.3
     runs-on: ubuntu-latest
+    needs: lua_5_3_linter
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -40,5 +52,27 @@ jobs:
         uses: ./.github/workflows/actions/lua-5.3
         with:
           bash-script-path: '.github/workflows/examples.sh'
+  lua_5_2_tests:
+    name: Fennel 0.0.5 on Lua 5.2
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run tests
+        id: tests-lua-5-2
+        uses: ./.github/workflows/actions/lua-5.2
+        with:
+          bash-script-path: '.github/workflows/tests.sh'
+  lua_5_1_tests:
+    name: Fennel 0.0.5 on Lua 5.1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Run tests
+        id: tests-lua-5-1
+        uses: ./.github/workflows/actions/lua-5.1
+        with:
+          bash-script-path: '.github/workflows/tests.sh'
 
 
