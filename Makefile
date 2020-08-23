@@ -6,8 +6,10 @@ rock:
 pack:
 	luarocks pack build/luarocks/supernova-$(VERSION).rockspec
 
-install:
-# 	luarocks install supernova-$(VERSION).all.rock --local
+install-rock:
+	luarocks install supernova-$(VERSION).all.rock --local
+
+install-pack:
 	luarocks install supernova-$(VERSION).src.rock --local
 
 uninstall:

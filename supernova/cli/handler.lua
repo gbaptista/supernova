@@ -117,7 +117,7 @@ function Handler.run_default(_, _, _)
 
   local result = supernova.gradient(content, colors)
 
-  io.write(result .. '\n')
+  io.write(result)
 end
 
 function Handler.run()
