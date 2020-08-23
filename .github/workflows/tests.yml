@@ -17,8 +17,8 @@ on:
       - 'Makefile'
 
 jobs:
-  lua_5_3:
-    name: Lua 5.3
+  lua_5_3_tests:
+    name: Fennel 0.0.5 on Lua 5.3
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,6 +28,13 @@ jobs:
         uses: ./.github/workflows/actions/lua-5.3
         with:
           bash-script-path: '.github/workflows/tests.sh'
+  lua_5_3_examples:
+    name: Examples for Fennel 0.0.5 on Lua 5.3
+    runs-on: ubuntu-latest
+    needs: lua_5_3_tests
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Run examples
         id: examples-lua-5-3
         uses: ./.github/workflows/actions/lua-5.3
