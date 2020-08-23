@@ -101,15 +101,14 @@ Ensure that you have [Lua](https://www.lua.org/start.html) and [LuaRocks](https:
 
 Installation through _LuaRocks_:
 
-
-**Install for the system:**
-```bash
-sudo luarocks install supernova
-```
-
-**Install for the user:**
+**Installing for the user (recommended):**
 ```bash
 luarocks install supernova --local
+```
+
+**Installing for the system:**
+```bash
+sudo luarocks install supernova
 ```
 
 ## Principles
