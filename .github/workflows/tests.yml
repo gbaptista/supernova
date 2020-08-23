@@ -23,6 +23,6 @@ jobs:
     steps:
       - name: Run tests
         id: tests-lua-5-4
-        uses: .github/workflows/action.yml
+        uses: ./.github/workflows
         with:
           bash-script-path: 'test-and-lint.sh'
