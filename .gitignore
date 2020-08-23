@@ -1,2 +1,4 @@
 images/cover.png
+images/cover-2.png
 *.rock
+!.github/workflows/actions/lua-5.4/luaunit-3.3-1.all.rock
