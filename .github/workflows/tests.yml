@@ -1,0 +1,26 @@
+name: Tests
+
+on:
+  push:
+    paths:
+      - '.github/workflows/lua-5.1.yml'
+      - '**.lua'
+      - '**.fnl'
+      - '**.sh'
+      - 'Makefile'
+  pull_request:
+    paths:
+      - '.github/workflows/lua-5.1.yml'
+      - '**.lua'
+      - '**.fnl'
+      - '**.sh'
+      - 'Makefile'
+
+jobs:
+  lua_5_4:
+    name: Lua 5.4
+    runs-on: ubuntu-latest
+    uses: ./
+    id: Lua 5.4
+    with:
+      bash-script-path: 'test-and-lint.sh'

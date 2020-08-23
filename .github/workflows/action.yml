@@ -1,0 +1,11 @@
+name: 'Fennel'
+description: 'Run a shell script inside a container with support for Fennel, Lua, and LuaRocks.'
+inputs:
+  bash-script-path:
+    description: 'The .sh file path.'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.bash-script-path }}

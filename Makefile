@@ -1,12 +1,14 @@
+VERSION=$(shell cat .version | tr -t '\n' '')
+
 rock:
-	luarocks make build/luarocks/supernova-0.0.1-1.rockspec --pack-binary-rock --local
+	luarocks make build/luarocks/supernova-$(VERSION).rockspec --pack-binary-rock --local
 
 pack:
-	luarocks pack build/luarocks/supernova-0.0.1-1.rockspec
+	luarocks pack build/luarocks/supernova-$(VERSION).rockspec
 
 install:
-# 	luarocks install supernova-0.0.1-1.all.rock --local
-	luarocks install supernova-0.0.1-1.src.rock --local
+# 	luarocks install supernova-$(VERSION).all.rock --local
+	luarocks install supernova-$(VERSION).src.rock --local
 
 uninstall:
 	luarocks remove supernova --local
