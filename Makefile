@@ -17,3 +17,6 @@ uninstall:
 
 remove:
 	luarocks remove supernova --local
+
+upload:
+	luarocks upload build/luarocks/supernova-$(VERSION).rockspec --api-key=${API_KEY}
