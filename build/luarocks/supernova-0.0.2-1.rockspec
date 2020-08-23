@@ -4,8 +4,8 @@ source = {
    url = "git+ssh://git@github.com/gbaptista/supernova.git"
 }
 description = {
-   summary = "Terminal string styling.",
-   detailed = "Terminal string styling. Support for Fennel, Lua, and Shell.",
+   summary = "Terminal string styling. Put some color in your console!",
+   detailed = "Terminal string styling. Put some color in your console! Support for Fennel, Lua, and Shell.",
    homepage = "https://github.com/gbaptista/supernova",
    license = "MIT"
 }
