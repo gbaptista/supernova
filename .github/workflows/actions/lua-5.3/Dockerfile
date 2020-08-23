@@ -13,7 +13,7 @@ RUN chmod +x /usr/bin/fennel
 
 FROM nickblah/lua:5.3-luarocks-alpine
 
-RUN apk add bash gcc libc-dev --update --no-cache
+RUN apk add bash --update --no-cache
 
 COPY --from=builder /usr/bin/fennel /usr/bin/fennel
 
@@ -26,7 +26,7 @@ RUN lua -v && \
   fennel --version && \
   fennel -e '"Fennel successfully installed."'
 
-RUN luarocks install luaunit && luarocks install luacheck
+RUN luarocks install luaunit
 
 COPY entrypoint.sh /entrypoint.sh
 

@@ -17,9 +17,20 @@ on:
       - 'Makefile'
 
 jobs:
+  linter:
+    name: Linter
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Linter
+        uses: ./.github/workflows/actions/lua-5.4
+        with:
+          bash-script-path: '.github/workflows/linter.sh'
   tests:
     name: Tests
     runs-on: ubuntu-latest
+    needs: linter
     steps:
       - name: Checkout
         uses: actions/checkout@v2
