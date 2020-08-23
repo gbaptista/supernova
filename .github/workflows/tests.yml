@@ -24,6 +24,5 @@ jobs:
       - name: Run tests
         id: tests-lua-5.4
         uses: ./
-          id: Lua 5.4
-          with:
-            bash-script-path: 'test-and-lint.sh'
+        with:
+          bash-script-path: 'test-and-lint.sh'
