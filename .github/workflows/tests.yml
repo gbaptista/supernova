@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run tests
-        id: tests-lua-5.4
+        id: tests-lua-5-4
         uses: ./
         with:
           bash-script-path: 'test-and-lint.sh'
