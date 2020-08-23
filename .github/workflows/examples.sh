@@ -1,3 +1,12 @@
-bash _examples/lua/run.sh 1>/dev/null
-bash _examples/shell/run.sh 1>/dev/null
-bash _examples/fennel/run.sh 1>/dev/null
+set -e
+
+echo "Runing Lua examples..."
+bash -e _examples/lua/run.sh > /dev/null
+
+echo "Runing Shell examples..."
+bash -e _examples/shell/run.sh > /dev/null
+
+echo "Runing Fennel examples..."
+bash -e _examples/fennel/run.sh > /dev/null
+
+echo "All examples were successful."
