@@ -17,15 +17,15 @@ on:
       - 'Makefile'
 
 jobs:
-  lua_5_4:
-    name: Lua 5.4
+  lua_5_3:
+    name: Lua 5.3
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Run tests
-        id: tests-lua-5-4
-        uses: ./.github/workflows/actions/lua-5.4
+        id: tests-lua-5-3
+        uses: ./.github/workflows/actions/lua-5.3
         with:
           bash-script-path: '.github/workflows/tests.sh'
 

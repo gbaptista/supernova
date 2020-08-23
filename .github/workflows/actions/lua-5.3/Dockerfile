@@ -1,4 +1,4 @@
-FROM nickblah/lua:5.4-luarocks-alpine AS builder
+FROM nickblah/lua:5.3-luarocks-alpine AS builder
 
 RUN apk add --update --no-cache wget gnupg
 
@@ -11,7 +11,7 @@ RUN gpg --verify fennel-0.5.0.asc
 RUN cp fennel-0.5.0 /usr/bin/fennel
 RUN chmod +x /usr/bin/fennel
 
-FROM nickblah/lua:5.4-luarocks-alpine
+FROM nickblah/lua:5.3-luarocks-alpine
 
 RUN apk add bash --update --no-cache
 
