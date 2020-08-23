@@ -26,6 +26,8 @@ RUN lua -v && \
   fennel --version && \
   fennel -e '"Fennel successfully installed."'
 
+RUN luarocks install luacheck luaunit
+
 COPY entrypoint.sh /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
