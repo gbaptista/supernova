@@ -26,7 +26,7 @@ jobs:
       - name: Linter
         uses: ./.github/workflows/actions/lua-5.3
         with:
-          bash-script-path: '.github/workflows/tests.sh'
+          bash-script-path: '.github/workflows/linter.sh'
   tests:
     name: Tests
     runs-on: ubuntu-latest
