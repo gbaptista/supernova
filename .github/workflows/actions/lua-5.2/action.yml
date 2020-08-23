@@ -1,4 +1,4 @@
-name: 'Fennel 0.0.5 on Lua 5.2'
+name: 'Fennel 0.5 on Lua 5.2'
 description: 'Run a shell script inside a container with support for Fennel, Lua, and LuaRocks.'
 inputs:
   bash-script-path:

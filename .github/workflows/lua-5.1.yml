@@ -1,4 +1,4 @@
-name: Fennel 0.0.5 on Lua 5.1
+name: Fennel 0.5 on Lua 5.1
 
 on:
   push:
