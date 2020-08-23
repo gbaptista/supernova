@@ -1,4 +1,4 @@
-fennel _examples/fennel/extra/04-themes-a.fnl
+fennel _examples/fennel/extra/04-themes-2.fnl
 fennel _examples/fennel/extra/04-themes-b.fnl
 fennel _examples/fennel/extra/04-themes-c.fnl
 fennel _examples/fennel/extra/04-themes-d.fnl
