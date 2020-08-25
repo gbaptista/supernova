@@ -33,6 +33,8 @@ fortune | cowsay | supernova
   - [Gradient](#gradient)
   - [VGA Mode 13h](#vga-mode-13h)
   - [Packages](#packages)
+- [Contributing](#contributing)
+  - [Style Guide](#style-guide)
 - [Acknowledgments](#acknowledgments)
 - [References](#references)
 - [Screenshots](#screenshots)
@@ -168,6 +170,14 @@ The current [256 VGA color representation](https://github.com/gbaptista/supernov
 ### Packages
 
 We currently only have _luarocks_ packages. We have some experiments with standalone binaries and AUR packages that could be released.
+
+## Contributing
+
+### Style Guide
+
+We ensure that [Luacheck](https://github.com/mpeterv/luacheck) is valid for any Pull Request or commit.
+
+Also, we follow the [_Olivine Labs' Lua Style Guide_](https://github.com/Olivine-Labs/lua-style-guide). The [_LuaRocks' Lua Style Guide_](https://github.com/luarocks/lua-style-guide) is a great reference as well. If their suggestions conflict with each other, the _Olivine Labs' Guide_ prevails.
 
 ## Acknowledgments
 
