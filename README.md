@@ -57,6 +57,8 @@ fortune | cowsay | supernova
 
 ![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/main/images/demo.png)
 
+Check the [installation](#installing-for-fennel) instructions.
+
 Check the complete [documentation for the Fennel library](https://github.com/gbaptista/supernova/blob/main/README-Fennel.md).
 
 ## Lua
