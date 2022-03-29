@@ -5,7 +5,7 @@
 Terminal string styling. Put some color in your console! Support for Fennel, Lua, and Shell.
 
 <div align="center">
-  <img alt="Photo of the Veil Nebula from the Hubble Space Telescope." src="https://github.com/gbaptista/supernova/blob/master/images/header.png">
+  <img alt="Photo of the Veil Nebula from the Hubble Space Telescope." src="https://github.com/gbaptista/supernova/blob/main/images/header.png">
 </div>
 <div align="right">
   <small><em>
@@ -18,7 +18,7 @@ Terminal string styling. Put some color in your console! Support for Fennel, Lua
 fortune | cowsay | supernova
 ```
 
-![Quote by Richard Feynman in different foreground colors and an illustration of a cow.](https://github.com/gbaptista/supernova/blob/master/images/rainbow.png)
+![Quote by Richard Feynman in different foreground colors and an illustration of a cow.](https://github.com/gbaptista/supernova/blob/main/images/rainbow.png)
 
 - Flavors:
   - [Fennel](#fennel)
@@ -55,9 +55,9 @@ fortune | cowsay | supernova
         ["#FF0000" "#FFFF00" "#00FF00" "#0FF0FE" "#233CFE"]))
 ```
 
-![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/master/images/demo.png)
+![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/main/images/demo.png)
 
-Check the complete [documentation for the Fennel library](https://github.com/gbaptista/supernova/blob/master/README-Fennel.md).
+Check the complete [documentation for the Fennel library](https://github.com/gbaptista/supernova/blob/main/README-Fennel.md).
 
 ## Lua
 
@@ -73,9 +73,9 @@ print(supernova.gradient(
 ))
 ```
 
-![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/master/images/demo.png)
+![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/main/images/demo.png)
 
-Check the complete [documentation for the Lua library](https://github.com/gbaptista/supernova/blob/master/README-Lua.md).
+Check the complete [documentation for the Lua library](https://github.com/gbaptista/supernova/blob/main/README-Lua.md).
 
 ## Shell
 
@@ -83,7 +83,7 @@ Check the complete [documentation for the Lua library](https://github.com/gbapti
 supernova inspect '#eb4934'
 ```
 
-![Screenshot of a Terminal containing information about the Cascara color.](https://github.com/gbaptista/supernova/blob/master/images/inspect.png)
+![Screenshot of a Terminal containing information about the Cascara color.](https://github.com/gbaptista/supernova/blob/main/images/inspect.png)
 
 ```bash
 echo WARNING: Intense color found. | supernova italic.yellow
@@ -94,9 +94,9 @@ echo Reflection, refraction and dispersion. | \
   '#FF0000' '#FFFF00' '#00FF00' '#0FF0FE' '#233CFE'
 ```
 
-![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/master/images/demo.png)
+![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/main/images/demo.png)
 
-Check the complete [documentation for the Shell CLI](https://github.com/gbaptista/supernova/blob/master/README-Shell.md).
+Check the complete [documentation for the Shell CLI](https://github.com/gbaptista/supernova/blob/main/README-Shell.md).
 
 ## Installing
 
@@ -142,8 +142,8 @@ Maintainers' priority in the pursuit of this principle:
 
 The current strategy with _metatables_ has its flaws. You can explore the problem by analyzing these samples of code:
 
-- [chains/example.fnl](https://git.sr.ht/~gbaptista/shortcodes/tree/master/chains/example.fnl)
-- [chains/example.lua](https://git.sr.ht/~gbaptista/shortcodes/tree/master/chains/example.lua)
+- [chains/example.fnl](https://git.sr.ht/~gbaptista/shortcodes/tree/main/item/chains/example.fnl)
+- [chains/example.lua](https://git.sr.ht/~gbaptista/shortcodes/tree/main/item/chains/example.lua)
 
 ### Color Proximity
 
@@ -172,7 +172,7 @@ local color = {
 
 ### VGA Mode 13h
 
-The current [256 VGA color representation](https://github.com/gbaptista/supernova/blob/master/supernova/core/reductor/256_vga.lua) may not be accurate enough. Some references that are worth exploring:
+The current [256 VGA color representation](https://github.com/gbaptista/supernova/blob/main/supernova/core/reductor/256_vga.lua) may not be accurate enough. Some references that are worth exploring:
 - [vgapal](https://github.com/canidlogic/vgapal)
 - [Mode 13h](https://en.wikipedia.org/wiki/Mode_13h)
 

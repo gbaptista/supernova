@@ -3,7 +3,7 @@
 Terminal string styling. Put some color in your console!
 
 <div align="center">
-  <img alt="Photo of the Veil Nebula from the Hubble Space Telescope." src="https://github.com/gbaptista/supernova/blob/master/images/header.png">
+  <img alt="Photo of the Veil Nebula from the Hubble Space Telescope." src="https://github.com/gbaptista/supernova/blob/main/images/header.png">
 </div>
 <div align="right">
   <small><em>
@@ -26,7 +26,7 @@ Terminal string styling. Put some color in your console!
         ["#FF0000" "#FFFF00" "#00FF00" "#0FF0FE" "#233CFE"]))
 ```
 
-![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/master/images/demo.png)
+![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/main/images/demo.png)
 
 - [Installing](#installing-fennel)
 - [Helpers](#helpers-fennel)

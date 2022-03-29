@@ -3,7 +3,7 @@
 Terminal string styling. Put some color in your console!
 
 <div align="center">
-  <img alt="Photo of the Veil Nebula from the Hubble Space Telescope." src="https://github.com/gbaptista/supernova/blob/master/images/header.png">
+  <img alt="Photo of the Veil Nebula from the Hubble Space Telescope." src="https://github.com/gbaptista/supernova/blob/main/images/header.png">
 </div>
 <div align="right">
   <small><em>
@@ -17,7 +17,7 @@ Terminal string styling. Put some color in your console!
 supernova inspect '#eb4934'
 ```
 
-![Screenshot of a Terminal containing information about the Cascara color.](https://github.com/gbaptista/supernova/blob/master/images/inspect.png)
+![Screenshot of a Terminal containing information about the Cascara color.](https://github.com/gbaptista/supernova/blob/main/images/inspect.png)
 
 ```bash
 echo WARNING: Intense color found. | supernova italic.yellow
@@ -28,7 +28,7 @@ echo Reflection, refraction and dispersion. | \
   '#FF0000' '#FFFF00' '#00FF00' '#0FF0FE' '#233CFE'
 ```
 
-![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/master/images/demo.png)
+![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/main/images/demo.png)
 
 - [Default Random Rainbow](#default-random-rainbow-shell)
 - [Helpers](#helpers-shell)
