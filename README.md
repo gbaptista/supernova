@@ -117,7 +117,7 @@ sudo luarocks install supernova
 ### Installing for Fennel
 
 To install through [fnx](https://github.com/gbaptista/fnx), add to your `.fnx.fnl`:
-````fnl
+```fnl
 {:dependencies {
    :supernova {:lua/rock ">= 0.0.2"} }}
 ```

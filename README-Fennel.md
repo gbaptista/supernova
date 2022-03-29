@@ -57,7 +57,7 @@ Terminal string styling. Put some color in your console!
 
 To install through [fnx](https://github.com/gbaptista/fnx), add to your `.fnx.fnl`:
 
-````fnl
+```fnl
 {:dependencies {
    :supernova {:lua/rock ">= 0.0.2"} }}
 ```
