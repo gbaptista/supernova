@@ -58,8 +58,13 @@ Terminal string styling. Put some color in your console!
 To install through [fnx](https://github.com/gbaptista/fnx), add to your `.fnx.fnl`:
 
 ```fnl
-{:dependencies {
-   :supernova {:lua/rock ">= 0.0.2"} }}
+:supernova {:lua/rock ">= 0.0.2"}
+
+; Example:
+
+{:name :my-project
+ :version :0.0.1
+ :dependencies {:supernova {:lua/rock ">= 0.0.2"}}}
 ```
 
 ### Helpers (Fennel)
