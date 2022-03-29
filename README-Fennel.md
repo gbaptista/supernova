@@ -28,6 +28,7 @@ Terminal string styling. Put some color in your console!
 
 ![Screenshot of a Terminal containing texts with several foreground colors.](https://github.com/gbaptista/supernova/blob/master/images/demo.png)
 
+- [Installing](#installing-fennel)
 - [Helpers](#helpers-fennel)
 - [Styles](#styles-fennel)
   - [Common](#common-styles-fennel)
@@ -51,6 +52,15 @@ Terminal string styling. Put some color in your console!
   - [Custom Themes](#custom-themes-fennel)
     - [Adding a Custom Theme](#adding-a-custom-theme-fennel)
     - [Inspecting Themes](#inspecting-themes-fennel)
+
+### Installing (Fennel)
+
+To install through [fnx](https://github.com/gbaptista/fnx), add to your `.fnx.fnl`:
+
+````fnl
+{:dependencies {
+   :supernova {:lua/rock ">= 0.0.2"} }}
+```
 
 ### Helpers (Fennel)
 

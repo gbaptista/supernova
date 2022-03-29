@@ -25,6 +25,7 @@ fortune | cowsay | supernova
   - [Lua](#lua)
   - [Shell](#shell)
 - [Installing](#installing)
+  - [Installing for Fennel](#installing-for-fennel)
 - [Principles](#principles)
   - [Portability](#1-portability)
 - [Room for Improvement](#room-for-improvement)
@@ -111,6 +112,14 @@ luarocks install supernova --local
 **Installing for the system:**
 ```bash
 sudo luarocks install supernova
+```
+
+### Installing for Fennel
+
+To install through [fnx](https://github.com/gbaptista/fnx), add to your `.fnx.fnl`:
+````fnl
+{:dependencies {
+   :supernova {:lua/rock ">= 0.0.2"} }}
 ```
 
 ## Principles
